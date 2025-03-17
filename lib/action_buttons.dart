@@ -20,7 +20,7 @@ class _ActionButtonsState extends State<ActionButtons> {
               backgroundColor: MaterialStateProperty.all(Colors.blue),
               iconSize: MaterialStateProperty.all(50),
               padding: MaterialStateProperty.all(
-                EdgeInsets.symmetric(horizontal: 150, vertical: 15),
+                EdgeInsets.symmetric(horizontal: 140, vertical: 15),
               ),
             ),
             // onPressed: (){
@@ -28,7 +28,7 @@ class _ActionButtonsState extends State<ActionButtons> {
             // },
             onPressed: () async {
               final Uri url = Uri.parse(
-                "https://www.linkedin.com/in/oudompanhariddh-chea-8542b2253",
+                "https://www.facebook.com/share/1BczWaWf8f/",
               ); 
               if (await canLaunchUrl(url)) {
                 await launchUrl(url);
@@ -48,7 +48,7 @@ class _ActionButtonsState extends State<ActionButtons> {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(Colors.white),
               padding: MaterialStateProperty.all(
-                EdgeInsets.symmetric(horizontal: 120, vertical: 15),
+                EdgeInsets.symmetric(horizontal: 110, vertical: 15),
               ),
               side: MaterialStateProperty.all(
       BorderSide(color: Colors.blue, width: 2),
@@ -69,11 +69,17 @@ class _ActionButtonsState extends State<ActionButtons> {
             // onPressed: (){},
             child: Row(
               mainAxisSize: MainAxisSize.min,
-              children: [
-                Text("Download CV", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
+               children: [
+                Flexible(
+                  child: Text(
+                    "Download CV",
+                    style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                    overflow: TextOverflow.ellipsis, // Prevents overflow by truncating text
+                    softWrap: false, // Ensures the text doesn't wrap
+                  ),
+                ),
+                SizedBox(width: 5), // Small gap between text and icon
                 Icon(Icons.download, color: Colors.blue),
-                SizedBox(width: 8),
-                
               ],
             ),
           ),

@@ -1,16 +1,24 @@
 # portfolio
 
-A new Flutter project.
+This is my portfolio mobile project running with flutter and also running with my physical android phone instead of emulator. It displays essential informations such as</br>
+- Profile picture
+- Name
+- Role or job position
+- Short description 
+- Sidebar menu button
+- Hire me button ( Facebook )
+- Download CV button ( Linkedin )
 
-## Getting Started
+# Features
+## home_page
 
-This project is a starting point for a Flutter application.
+![alt text](image1.jpg)
 
-A few resources to get you started if this is your first Flutter project:
+## menu_drawer
+![alt text](image2.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Hire me Button Navigation
+![alt text](image3.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Download CV Button Navigation
+![alt text](image4.jpg)
